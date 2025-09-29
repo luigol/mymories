@@ -1,0 +1,58 @@
+[
+  {
+    "id": "bubble-0",
+    "title": "First bubble",
+    "description": "Test for the dev",
+    "location": null,
+    "photo": null,
+    "date": "2005-01-01T00-00-00",
+    "folderName": "2005-01-01T00-00-00",
+    "hasPhoto": false,
+    "rawDate": "2005-01-01T00:00:00",
+    "size": 150,
+    "x": 10.0,
+    "y": 50
+  },
+  {
+    "id": "bubble-1",
+    "title": "Second bubble",
+    "description": "Test for the dev",
+    "location": null,
+    "photo": null,
+    "date": "2010-01-01T00-00-00",
+    "folderName": "2010-01-01T00-00-00",
+    "hasPhoto": false,
+    "rawDate": "2010-01-01T00:00:00",
+    "size": 150,
+    "x": 36.666666666666664,
+    "y": 50
+  },
+  {
+    "id": "bubble-2",
+    "title": "Third bubble",
+    "description": "Test for the dev",
+    "location": null,
+    "photo": null,
+    "date": "2015-01-01T00-00-00",
+    "folderName": "2015-01-01T00-00-00",
+    "hasPhoto": false,
+    "rawDate": "2015-01-01T00:00:00",
+    "size": 150,
+    "x": 63.33333333333333,
+    "y": 50
+  },
+  {
+    "id": "bubble-3",
+    "title": "Fourth bubble",
+    "description": "Test for the dev",
+    "location": null,
+    "photo": null,
+    "date": "2020-01-01T00-00-00",
+    "folderName": "2020-01-01T00-00-00",
+    "hasPhoto": false,
+    "rawDate": "2020-01-01T00:00:00",
+    "size": 150,
+    "x": 90.0,
+    "y": 50
+  }
+]

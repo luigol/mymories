@@ -1,0 +1,89 @@
+📌 Mymory Bubbles
+Concept: Bubble = Event
+
+Each bubble represents a memory event: it could be a party, a meeting, a trip, or even a solitary moment of reflection.
+
+Shape & Style: circular, organic, no rigid edges.
+
+Visual: smooth gradients, fluid and alive, floating against a dark background.
+
+Connections: subtle translucent lines or light trails connecting bubbles, representing relationships (people in common, shared themes, or timeline).
+
+Fluidity: movements must be smooth and organic, never blocky or jerky.
+
+Interactivity
+
+Clicking (or touching) a bubble expands it with a glassmorphic effect (Glassmorphism).
+
+Expansion reveals event details: photos, comments, people involved.
+
+Bubbles without photos = blue blur gradient.
+
+Bubbles with photos = photo inside the circle + blur preview.
+
+When the user clicks the action button → the bubble “bursts” and shows the photo in full resolution, with description below (similar to an Instagram post).
+
+Connections adjust dynamically, like elastic bands, when bubbles move or expand.
+
+📂 File Structure
+
+mymory.html
+The visual engine that renders the bubble universe.
+
+Scans the /bubbles/ folder.
+
+Generates each bubble dynamically from metadata.
+
+Draws fluid movements and connections.
+
+/bubbles/ folder
+Each subfolder = one bubble/event.
+
+Folder name = date in format YYYY-MM-DDTHH:mm:ss.
+
+Contents:
+
+/bubbles
+   /2025-09-27T10:30:00
+      config.json
+      thumbnail.png
+   /2025-10-01T18:45:00
+      config.json
+      photo.jpg
+   /2025-11-12T09:20:00
+      config.json
+      img.png
+
+
+config.json (example)
+
+{
+  "title": "My First Video",
+  "description": "This day I played soccer for the first time.",
+  "photo": "photo.jpg"
+}
+
+Rendering Logic in mymory.html
+
+A JS script scans /bubbles/.
+
+For each config.json, it generates a bubble:
+
+Size proportional to relevance or number of interactions.
+
+Position fluid, with smooth organic movement.
+
+Connections based on timeline (dates) or relationships.
+
+Clicking a bubble → opens a glassmorphic popup with event details (photo, text, links).
+
+🎨 Differentiator
+
+Bubbles are not hardcoded — they are generated automatically from files.
+
+In the future, the data source can shift from /bubbles/ folder to a real database.
+
+👉 Short term: manual creation of bubble folders.
+👉 Long term: a scalable social network where users create their own bubbles.
+
+This architecture makes Mymory a living web, capable of evolving from a prototype into a complete social platform.
